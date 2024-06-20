@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="../build/CarWorkshopSystem.WebAPI.props" />
+</Project>

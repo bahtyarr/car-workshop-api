@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "OzHDH80BO7to9FsR3lYUqQ1AUfOhNMa7Tx+3szio3ss=",
+  "Source": "CarWorkshopSystem.WebAPI",
+  "BasePath": "_content/CarWorkshopSystem.WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
