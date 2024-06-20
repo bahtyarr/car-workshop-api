@@ -23,6 +23,7 @@
 /Users/bahtyarr/car-workshop-api/CarWorkshopSystem.Infrastructure/obj/Debug/net8.0/CarWorkshopSystem.Infrastructure.AssemblyInfoInputs.cache
 /Users/bahtyarr/car-workshop-api/CarWorkshopSystem.Infrastructure/obj/Debug/net8.0/CarWorkshopSystem.Infrastructure.AssemblyInfo.cs
 /Users/bahtyarr/car-workshop-api/CarWorkshopSystem.Infrastructure/obj/Debug/net8.0/CarWorkshopSystem.Infrastructure.csproj.CoreCompileInputs.cache
+/Users/bahtyarr/car-workshop-api/CarWorkshopSystem.Infrastructure/obj/Debug/net8.0/CarWorkshopSystem.Infrastructure.sourcelink.json
 /Users/bahtyarr/car-workshop-api/CarWorkshopSystem.Infrastructure/obj/Debug/net8.0/CarWorkshopSystem.Infrastructure.csproj.CopyComplete
 /Users/bahtyarr/car-workshop-api/CarWorkshopSystem.Infrastructure/obj/Debug/net8.0/CarWorkshopSystem.Infrastructure.dll
 /Users/bahtyarr/car-workshop-api/CarWorkshopSystem.Infrastructure/obj/Debug/net8.0/refint/CarWorkshopSystem.Infrastructure.dll

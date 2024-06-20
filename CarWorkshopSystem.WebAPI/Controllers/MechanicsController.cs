@@ -3,6 +3,7 @@ using CarWorkshopSystem.Core.Domain;
 using CarWorkshopSystem.Core.Enums;
 using CarWorkshopSystem.Infrastructure.Repositories.Interfaces;
 using CarWorkshopSystem.Infrastructure.Security;
+using CarWorkshopSystem.WebAPI.ViewModel.Job;
 using CarWorkshopSystem.WebAPI.ViewModel.Mechanics;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -61,11 +62,12 @@ namespace CarWorkshopSystem.WebAPI.Controllers
         public async Task<ActionResult<IEnumerable<Mechanic>>> GetMechanicList()
         {
             var mechanics = await _mechanicRepository.GetMechanicList();
-            var results = mechanics.Select(item => new
+            var results = mechanics.Select(item => new MechanicVm
             {
-                id = item.Id,
-                name = item.User.Name,
-                email = item.User.Email
+                Id = item.Id,
+                Name = item.User.Name,
+                Email = item.User.Email,
+                UserId = item.User.UserId,
             }).ToList();
 
             return Ok(results);
@@ -78,7 +80,22 @@ namespace CarWorkshopSystem.WebAPI.Controllers
             var mechanic = await _mechanicRepository.ReadDetailByIdAsync(id);
             if (mechanic == null) return NotFound();
 
-            return Ok(mechanic);
+            var response = new MechanicVm
+            {
+                Id = mechanic.Id,
+                Name = mechanic.User.Name,
+                Email = mechanic.User.Email,
+                UserId = mechanic.User.UserId,
+                Jobs = mechanic.Jobs.Select(x => new JobStatusVm
+                {
+                    JobId = x.Id,
+                    ServiceName = x.Service.Name,
+                    MechanicName = mechanic.User.Name,
+                    Status = x.Status,
+                }).ToList(),
+            };
+
+            return Ok(response);
         }
 
         [HttpPut("{id}")]

@@ -1,0 +1,1233 @@
+{
+	"info": {
+		"_postman_id": "82bf978b-21d5-4bdf-b34b-18199b8cae56",
+		"name": "CarWorkShop",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3599469"
+	},
+	"item": [
+		{
+			"name": "Accounts",
+			"item": [
+				{
+					"name": "Create Accounts",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Admin 2\",\n  \"email\": \"mechanic@mailtrap.io\",\n  \"password\": \"temp123\",\n  \"role\": \"Admin\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5043/api/Accounts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5043",
+							"path": [
+								"api",
+								"Accounts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Accounts List",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxZGM5MmVmYy01NjQ2LTQyOTYtODE1NS05OTBlZjYyZjQzYTkiLCJ1bmlxdWVfbmFtZSI6Im1lY2hhbmljQG1haWx0cmFwLmlvIiwicm9sZSI6IkFkbWluIiwibmJmIjoxNzE4OTIyNzM3LCJleHAiOjE3MTkwMDkxMzcsImlhdCI6MTcxODkyMjczN30.ESi8-5bYrBcXcbhxQArIQJoulnqTvmZtQRH-5rR7XVU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5043/api/Accounts",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5043",
+							"path": [
+								"api",
+								"Accounts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Single Account",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxZGM5MmVmYy01NjQ2LTQyOTYtODE1NS05OTBlZjYyZjQzYTkiLCJ1bmlxdWVfbmFtZSI6Im1lY2hhbmljQG1haWx0cmFwLmlvIiwicm9sZSI6IkFkbWluIiwibmJmIjoxNzE4OTIyNzM3LCJleHAiOjE3MTkwMDkxMzcsImlhdCI6MTcxODkyMjczN30.ESi8-5bYrBcXcbhxQArIQJoulnqTvmZtQRH-5rR7XVU",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5043/api/Accounts/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5043",
+							"path": [
+								"api",
+								"Accounts",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Mechanics",
+			"item": [
+				{
+					"name": "Get Mechanic List",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI4NWFhYTgzMS01M2Y2LTRiYWUtOTk1Zi1jYzZiOWNjYjI4MzAiLCJ1bmlxdWVfbmFtZSI6ImFkaUBlbWFpbC5jb20iLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE3MTg4Mzk5NDgsImV4cCI6MTcxODkyNjM0OCwiaWF0IjoxNzE4ODM5OTQ4fQ.llzVe1HHLGdic7PqvwhYEPB07mUPqi6wScKvE9vRANE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Mecha\",\n  \"email\": \"mecha@mailinator.com\",\n  \"password\": \"temp123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5043/api/Mechanics",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5043",
+							"path": [
+								"api",
+								"Mechanics"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Mechanic",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI4NWFhYTgzMS01M2Y2LTRiYWUtOTk1Zi1jYzZiOWNjYjI4MzAiLCJ1bmlxdWVfbmFtZSI6ImFkaUBlbWFpbC5jb20iLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE3MTg4Mzk5NDgsImV4cCI6MTcxODkyNjM0OCwiaWF0IjoxNzE4ODM5OTQ4fQ.llzVe1HHLGdic7PqvwhYEPB07mUPqi6wScKvE9vRANE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Mecha 3\",\n  \"email\": \"mecha3@mailtrap.io\",\n  \"password\": \"temp123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5043/api/Mechanics",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5043",
+							"path": [
+								"api",
+								"Mechanics"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Mechanic Details",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI4NWFhYTgzMS01M2Y2LTRiYWUtOTk1Zi1jYzZiOWNjYjI4MzAiLCJ1bmlxdWVfbmFtZSI6ImFkaUBlbWFpbC5jb20iLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE3MTg4Mzk5NDgsImV4cCI6MTcxODkyNjM0OCwiaWF0IjoxNzE4ODM5OTQ4fQ.llzVe1HHLGdic7PqvwhYEPB07mUPqi6wScKvE9vRANE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Mecha\",\n  \"email\": \"mecha@mailinator.com\",\n  \"password\": \"temp123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5043/api/Mechanics/2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5043",
+							"path": [
+								"api",
+								"Mechanics",
+								"2"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Mechanic",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI4NWFhYTgzMS01M2Y2LTRiYWUtOTk1Zi1jYzZiOWNjYjI4MzAiLCJ1bmlxdWVfbmFtZSI6ImFkaUBlbWFpbC5jb20iLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE3MTg4Mzk5NDgsImV4cCI6MTcxODkyNjM0OCwiaWF0IjoxNzE4ODM5OTQ4fQ.llzVe1HHLGdic7PqvwhYEPB07mUPqi6wScKvE9vRANE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Mecha 3 Edited\",\n  \"email\": \"mecha3@mailtrap.io\",\n  \"password\": \"temp123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5043/api/Mechanics/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5043",
+							"path": [
+								"api",
+								"Mechanics",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Mechanic",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI4NWFhYTgzMS01M2Y2LTRiYWUtOTk1Zi1jYzZiOWNjYjI4MzAiLCJ1bmlxdWVfbmFtZSI6ImFkaUBlbWFpbC5jb20iLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE3MTg4Mzk5NDgsImV4cCI6MTcxODkyNjM0OCwiaWF0IjoxNzE4ODM5OTQ4fQ.llzVe1HHLGdic7PqvwhYEPB07mUPqi6wScKvE9vRANE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Mecha 3 Edited\",\n  \"email\": \"mecha3@mailtrap.io\",\n  \"password\": \"temp123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5043/api/Mechanics/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5043",
+							"path": [
+								"api",
+								"Mechanics",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Services",
+			"item": [
+				{
+					"name": "Get Services List",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI4NWFhYTgzMS01M2Y2LTRiYWUtOTk1Zi1jYzZiOWNjYjI4MzAiLCJ1bmlxdWVfbmFtZSI6ImFkaUBlbWFpbC5jb20iLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE3MTg4Mzk5NDgsImV4cCI6MTcxODkyNjM0OCwiaWF0IjoxNzE4ODM5OTQ4fQ.llzVe1HHLGdic7PqvwhYEPB07mUPqi6wScKvE9vRANE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Change battery\",\n  \"price\": 1350000\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5043/api/Services",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5043",
+							"path": [
+								"api",
+								"Services"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Services",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI4NWFhYTgzMS01M2Y2LTRiYWUtOTk1Zi1jYzZiOWNjYjI4MzAiLCJ1bmlxdWVfbmFtZSI6ImFkaUBlbWFpbC5jb20iLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE3MTg4Mzk5NDgsImV4cCI6MTcxODkyNjM0OCwiaWF0IjoxNzE4ODM5OTQ4fQ.llzVe1HHLGdic7PqvwhYEPB07mUPqi6wScKvE9vRANE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Change rims\",\n  \"price\": 2550000\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5043/api/Services",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5043",
+							"path": [
+								"api",
+								"Services"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Services Detail",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI4NWFhYTgzMS01M2Y2LTRiYWUtOTk1Zi1jYzZiOWNjYjI4MzAiLCJ1bmlxdWVfbmFtZSI6ImFkaUBlbWFpbC5jb20iLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE3MTg4Mzk5NDgsImV4cCI6MTcxODkyNjM0OCwiaWF0IjoxNzE4ODM5OTQ4fQ.llzVe1HHLGdic7PqvwhYEPB07mUPqi6wScKvE9vRANE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Change rims\",\n  \"price\": 2550000\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5043/api/Services/9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5043",
+							"path": [
+								"api",
+								"Services",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Services",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI4NWFhYTgzMS01M2Y2LTRiYWUtOTk1Zi1jYzZiOWNjYjI4MzAiLCJ1bmlxdWVfbmFtZSI6ImFkaUBlbWFpbC5jb20iLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE3MTg4Mzk5NDgsImV4cCI6MTcxODkyNjM0OCwiaWF0IjoxNzE4ODM5OTQ4fQ.llzVe1HHLGdic7PqvwhYEPB07mUPqi6wScKvE9vRANE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Change rims\",\n  \"price\": 2650000\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5043/api/Services/9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5043",
+							"path": [
+								"api",
+								"Services",
+								"9"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Services",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI4NWFhYTgzMS01M2Y2LTRiYWUtOTk1Zi1jYzZiOWNjYjI4MzAiLCJ1bmlxdWVfbmFtZSI6ImFkaUBlbWFpbC5jb20iLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE3MTg4Mzk5NDgsImV4cCI6MTcxODkyNjM0OCwiaWF0IjoxNzE4ODM5OTQ4fQ.llzVe1HHLGdic7PqvwhYEPB07mUPqi6wScKvE9vRANE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"Change rims\",\n  \"price\": 2650000\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5043/api/Services/9",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5043",
+							"path": [
+								"api",
+								"Services",
+								"9"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cars",
+			"item": [
+				{
+					"name": "Get Cars List",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI4NWFhYTgzMS01M2Y2LTRiYWUtOTk1Zi1jYzZiOWNjYjI4MzAiLCJ1bmlxdWVfbmFtZSI6ImFkaUBlbWFpbC5jb20iLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE3MTg4Mzk5NDgsImV4cCI6MTcxODkyNjM0OCwiaWF0IjoxNzE4ODM5OTQ4fQ.llzVe1HHLGdic7PqvwhYEPB07mUPqi6wScKvE9vRANE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"registrationNumber\": \"DK 1786 AAD\",\n  \"model\": \"Jazz\",\n  \"make\": \"Japan\",\n  \"color\": \"Silver\",\n  \"ownerName\": \"Edo\",\n  \"email\": \"edo@mailinator.com\",\n  \"password\": \"temp123\",\n  \"startDate\": \"2024-06-20T00:46:46.220Z\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5043/api/Cars",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5043",
+							"path": [
+								"api",
+								"Cars"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Car Detail",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI4NWFhYTgzMS01M2Y2LTRiYWUtOTk1Zi1jYzZiOWNjYjI4MzAiLCJ1bmlxdWVfbmFtZSI6ImFkaUBlbWFpbC5jb20iLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE3MTg4Mzk5NDgsImV4cCI6MTcxODkyNjM0OCwiaWF0IjoxNzE4ODM5OTQ4fQ.llzVe1HHLGdic7PqvwhYEPB07mUPqi6wScKvE9vRANE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"registrationNumber\": \"DK 1786 AAD\",\n  \"model\": \"Jazz\",\n  \"make\": \"Japan\",\n  \"color\": \"Silver\",\n  \"ownerName\": \"Edo\",\n  \"email\": \"edo@mailinator.com\",\n  \"password\": \"temp123\",\n  \"startDate\": \"2024-06-20T00:46:46.220Z\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5043/api/Cars/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5043",
+							"path": [
+								"api",
+								"Cars",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Car",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI4NWFhYTgzMS01M2Y2LTRiYWUtOTk1Zi1jYzZiOWNjYjI4MzAiLCJ1bmlxdWVfbmFtZSI6ImFkaUBlbWFpbC5jb20iLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE3MTg4Mzk5NDgsImV4cCI6MTcxODkyNjM0OCwiaWF0IjoxNzE4ODM5OTQ4fQ.llzVe1HHLGdic7PqvwhYEPB07mUPqi6wScKvE9vRANE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"registrationNumber\": \"DK 1234 DL\",\n  \"model\": \"Yaris\",\n  \"make\": \"Japan\",\n  \"color\": \"Blue\",\n  \"ownerName\": \"Mulen\",\n  \"email\": \"mulen@mailtrap.io\",\n  \"password\": \"temp123\",\n  \"startDate\": \"2024-06-20T00:46:46.220Z\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5043/api/Cars",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5043",
+							"path": [
+								"api",
+								"Cars"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Car",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI4NWFhYTgzMS01M2Y2LTRiYWUtOTk1Zi1jYzZiOWNjYjI4MzAiLCJ1bmlxdWVfbmFtZSI6ImFkaUBlbWFpbC5jb20iLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE3MTg4Mzk5NDgsImV4cCI6MTcxODkyNjM0OCwiaWF0IjoxNzE4ODM5OTQ4fQ.llzVe1HHLGdic7PqvwhYEPB07mUPqi6wScKvE9vRANE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"registrationNumber\": \"DK 1234 DZ\",\n  \"model\": \"Yaris\",\n  \"make\": \"Japan\",\n  \"color\": \"Blue\",\n  \"ownerName\": \"Mulen\",\n  \"email\": \"mulen@mailtrap.io\",\n  \"password\": \"temp123\",\n  \"startDate\": \"2024-06-20T00:46:46.220Z\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5043/api/Cars/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5043",
+							"path": [
+								"api",
+								"Cars",
+								"7"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Car",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI4NWFhYTgzMS01M2Y2LTRiYWUtOTk1Zi1jYzZiOWNjYjI4MzAiLCJ1bmlxdWVfbmFtZSI6ImFkaUBlbWFpbC5jb20iLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE3MTg4Mzk5NDgsImV4cCI6MTcxODkyNjM0OCwiaWF0IjoxNzE4ODM5OTQ4fQ.llzVe1HHLGdic7PqvwhYEPB07mUPqi6wScKvE9vRANE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"registrationNumber\": \"DK 1234 DZ\",\n  \"model\": \"Yaris\",\n  \"make\": \"Japan\",\n  \"color\": \"Blue\",\n  \"ownerName\": \"Mulen\",\n  \"email\": \"mulen@mailtrap.io\",\n  \"password\": \"temp123\",\n  \"startDate\": \"2024-06-20T00:46:46.220Z\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5043/api/Cars/7",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5043",
+							"path": [
+								"api",
+								"Cars",
+								"7"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Jobs",
+			"item": [
+				{
+					"name": "Get Jobs List",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI4NWFhYTgzMS01M2Y2LTRiYWUtOTk1Zi1jYzZiOWNjYjI4MzAiLCJ1bmlxdWVfbmFtZSI6ImFkaUBlbWFpbC5jb20iLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE3MTg4Mzk5NDgsImV4cCI6MTcxODkyNjM0OCwiaWF0IjoxNzE4ODM5OTQ4fQ.llzVe1HHLGdic7PqvwhYEPB07mUPqi6wScKvE9vRANE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"carId\": 4,\n  \"serviceId\": 2,\n  \"mechanicId\": 1,\n  \"status\": \"Progress\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5043/api/Jobs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5043",
+							"path": [
+								"api",
+								"Jobs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Read Job Detail",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI4NWFhYTgzMS01M2Y2LTRiYWUtOTk1Zi1jYzZiOWNjYjI4MzAiLCJ1bmlxdWVfbmFtZSI6ImFkaUBlbWFpbC5jb20iLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE3MTg4Mzk5NDgsImV4cCI6MTcxODkyNjM0OCwiaWF0IjoxNzE4ODM5OTQ4fQ.llzVe1HHLGdic7PqvwhYEPB07mUPqi6wScKvE9vRANE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"carId\": 4,\n  \"serviceId\": 2,\n  \"mechanicId\": 1,\n  \"status\": \"Progress\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5043/api/Jobs/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5043",
+							"path": [
+								"api",
+								"Jobs",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Job (assign to mechanic)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI4NWFhYTgzMS01M2Y2LTRiYWUtOTk1Zi1jYzZiOWNjYjI4MzAiLCJ1bmlxdWVfbmFtZSI6ImFkaUBlbWFpbC5jb20iLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE3MTg4Mzk5NDgsImV4cCI6MTcxODkyNjM0OCwiaWF0IjoxNzE4ODM5OTQ4fQ.llzVe1HHLGdic7PqvwhYEPB07mUPqi6wScKvE9vRANE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"carId\": 4,\n  \"serviceId\": 2,\n  \"mechanicId\": 1,\n  \"status\": \"Progress\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5043/api/Jobs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5043",
+							"path": [
+								"api",
+								"Jobs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Job (status)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI4NWFhYTgzMS01M2Y2LTRiYWUtOTk1Zi1jYzZiOWNjYjI4MzAiLCJ1bmlxdWVfbmFtZSI6ImFkaUBlbWFpbC5jb20iLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE3MTg4Mzk5NDgsImV4cCI6MTcxODkyNjM0OCwiaWF0IjoxNzE4ODM5OTQ4fQ.llzVe1HHLGdic7PqvwhYEPB07mUPqi6wScKvE9vRANE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"carId\": 4,\n  \"serviceId\": 2,\n  \"mechanicId\": 1,\n  \"status\": \"Completed\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5043/api/Jobs/17",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5043",
+							"path": [
+								"api",
+								"Jobs",
+								"17"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Job",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI4NWFhYTgzMS01M2Y2LTRiYWUtOTk1Zi1jYzZiOWNjYjI4MzAiLCJ1bmlxdWVfbmFtZSI6ImFkaUBlbWFpbC5jb20iLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE3MTg4Mzk5NDgsImV4cCI6MTcxODkyNjM0OCwiaWF0IjoxNzE4ODM5OTQ4fQ.llzVe1HHLGdic7PqvwhYEPB07mUPqi6wScKvE9vRANE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"carId\": 4,\n  \"serviceId\": 2,\n  \"mechanicId\": 1,\n  \"status\": \"Completed\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5043/api/Jobs/17",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5043",
+							"path": [
+								"api",
+								"Jobs",
+								"17"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Mechanic Jobs List (by string userId)",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI4NWFhYTgzMS01M2Y2LTRiYWUtOTk1Zi1jYzZiOWNjYjI4MzAiLCJ1bmlxdWVfbmFtZSI6ImFkaUBlbWFpbC5jb20iLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE3MTg4Mzk5NDgsImV4cCI6MTcxODkyNjM0OCwiaWF0IjoxNzE4ODM5OTQ4fQ.llzVe1HHLGdic7PqvwhYEPB07mUPqi6wScKvE9vRANE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"carId\": 4,\n  \"serviceId\": 2,\n  \"mechanicId\": 1,\n  \"status\": \"Completed\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5043/api/Jobs/mechanic/fb206a66-c94e-46dc-af37-83c9c8b220c2",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5043",
+							"path": [
+								"api",
+								"Jobs",
+								"mechanic",
+								"fb206a66-c94e-46dc-af37-83c9c8b220c2"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Repairs",
+			"item": [
+				{
+					"name": "Get Repairs List",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI4NWFhYTgzMS01M2Y2LTRiYWUtOTk1Zi1jYzZiOWNjYjI4MzAiLCJ1bmlxdWVfbmFtZSI6ImFkaUBlbWFpbC5jb20iLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE3MTg4Mzk5NDgsImV4cCI6MTcxODkyNjM0OCwiaWF0IjoxNzE4ODM5OTQ4fQ.llzVe1HHLGdic7PqvwhYEPB07mUPqi6wScKvE9vRANE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"carId\": 4,\n  \"startDate\": \"2024-06-20T03:15:07.839Z\",\n  \"status\": \"Completed\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5043/api/Repairs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5043",
+							"path": [
+								"api",
+								"Repairs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Repair Detail",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI4NWFhYTgzMS01M2Y2LTRiYWUtOTk1Zi1jYzZiOWNjYjI4MzAiLCJ1bmlxdWVfbmFtZSI6ImFkaUBlbWFpbC5jb20iLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE3MTg4Mzk5NDgsImV4cCI6MTcxODkyNjM0OCwiaWF0IjoxNzE4ODM5OTQ4fQ.llzVe1HHLGdic7PqvwhYEPB07mUPqi6wScKvE9vRANE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"carId\": 4,\n  \"startDate\": \"2024-06-20T03:15:07.839Z\",\n  \"status\": \"Completed\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5043/api/Repairs/8",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5043",
+							"path": [
+								"api",
+								"Repairs",
+								"8"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Create Repair (for car exists)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI4NWFhYTgzMS01M2Y2LTRiYWUtOTk1Zi1jYzZiOWNjYjI4MzAiLCJ1bmlxdWVfbmFtZSI6ImFkaUBlbWFpbC5jb20iLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE3MTg4Mzk5NDgsImV4cCI6MTcxODkyNjM0OCwiaWF0IjoxNzE4ODM5OTQ4fQ.llzVe1HHLGdic7PqvwhYEPB07mUPqi6wScKvE9vRANE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"carId\": 6,\n  \"startDate\": \"2024-06-20T03:15:07.839Z\",\n  \"status\": \"Waiting\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5043/api/Repairs",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5043",
+							"path": [
+								"api",
+								"Repairs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Edit Repair (status)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI4NWFhYTgzMS01M2Y2LTRiYWUtOTk1Zi1jYzZiOWNjYjI4MzAiLCJ1bmlxdWVfbmFtZSI6ImFkaUBlbWFpbC5jb20iLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE3MTg4Mzk5NDgsImV4cCI6MTcxODkyNjM0OCwiaWF0IjoxNzE4ODM5OTQ4fQ.llzVe1HHLGdic7PqvwhYEPB07mUPqi6wScKvE9vRANE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"carId\": 6,\n  \"startDate\": \"2024-06-20T03:15:07.839Z\",\n  \"status\": \"Progress\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5043/api/Repairs/11",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5043",
+							"path": [
+								"api",
+								"Repairs",
+								"11"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Repair",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI4NWFhYTgzMS01M2Y2LTRiYWUtOTk1Zi1jYzZiOWNjYjI4MzAiLCJ1bmlxdWVfbmFtZSI6ImFkaUBlbWFpbC5jb20iLCJyb2xlIjoiQWRtaW4iLCJuYmYiOjE3MTg4Mzk5NDgsImV4cCI6MTcxODkyNjM0OCwiaWF0IjoxNzE4ODM5OTQ4fQ.llzVe1HHLGdic7PqvwhYEPB07mUPqi6wScKvE9vRANE",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"carId\": 6,\n  \"startDate\": \"2024-06-20T03:15:07.839Z\",\n  \"status\": \"Progress\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5043/api/Repairs/11",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5043",
+							"path": [
+								"api",
+								"Repairs",
+								"11"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "CarOwners",
+			"item": [
+				{
+					"name": "Get Car Owner Status (token as CarOwner)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIyZmM3YjRhMS02YjdhLTQ5YjYtYmYxNi1kOGMyYzg0NTI5ZjIiLCJ1bmlxdWVfbmFtZSI6ImVkb0BtYWlsaW5hdG9yLmNvbSIsInJvbGUiOiJDYXJPd25lciIsIm5iZiI6MTcxODg4MjUxNywiZXhwIjoxNzE4OTY4OTE3LCJpYXQiOjE3MTg4ODI1MTd9.RYngbJTgtx6RRz9Lp5PvWPBAg4XeQMEEvQAgZhVnVno",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:5043/api/CarOwners/cars",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5043",
+							"path": [
+								"api",
+								"CarOwners",
+								"cars"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}

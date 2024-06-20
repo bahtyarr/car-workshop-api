@@ -50,7 +50,7 @@ namespace CarWorkshopSystem.WebAPI.Controllers
             return Ok(new { Token = token });
         }
 
-        [HttpPost("create")]
+        [HttpPost]
         public async Task<ActionResult<User>> CreateUser(CreateUserVm model)
         {
             var user = new User

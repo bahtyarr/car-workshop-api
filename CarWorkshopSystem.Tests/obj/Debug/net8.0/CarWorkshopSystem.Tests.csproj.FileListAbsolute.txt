@@ -137,14 +137,14 @@
 /Users/bahtyarr/Documents/CarWorkshopSystem/CarWorkshopSystem.Tests/bin/Debug/net8.0/CarWorkshopSystem.Core.pdb
 /Users/bahtyarr/Documents/CarWorkshopSystem/CarWorkshopSystem.Tests/bin/Debug/net8.0/CarWorkshopSystem.Infrastructure.pdb
 /Users/bahtyarr/car-workshop-api/CarWorkshopSystem.Tests/bin/Debug/net8.0/CoverletSourceRootsMapping_CarWorkshopSystem.Tests
+/Users/bahtyarr/car-workshop-api/CarWorkshopSystem.Tests/bin/Debug/net8.0/CarWorkshopSystem.WebAPI.deps.json
+/Users/bahtyarr/car-workshop-api/CarWorkshopSystem.Tests/bin/Debug/net8.0/CarWorkshopSystem.WebAPI.runtimeconfig.json
 /Users/bahtyarr/car-workshop-api/CarWorkshopSystem.Tests/bin/Debug/net8.0/appsettings.Development.json
 /Users/bahtyarr/car-workshop-api/CarWorkshopSystem.Tests/bin/Debug/net8.0/appsettings.json
+/Users/bahtyarr/car-workshop-api/CarWorkshopSystem.Tests/bin/Debug/net8.0/CarWorkshopSystem.WebAPI
 /Users/bahtyarr/car-workshop-api/CarWorkshopSystem.Tests/bin/Debug/net8.0/xunit.runner.visualstudio.testadapter.dll
 /Users/bahtyarr/car-workshop-api/CarWorkshopSystem.Tests/bin/Debug/net8.0/xunit.runner.reporters.netcoreapp10.dll
 /Users/bahtyarr/car-workshop-api/CarWorkshopSystem.Tests/bin/Debug/net8.0/xunit.runner.utility.netcoreapp10.dll
-/Users/bahtyarr/car-workshop-api/CarWorkshopSystem.Tests/bin/Debug/net8.0/CarWorkshopSystem.WebAPI.deps.json
-/Users/bahtyarr/car-workshop-api/CarWorkshopSystem.Tests/bin/Debug/net8.0/CarWorkshopSystem.WebAPI.runtimeconfig.json
-/Users/bahtyarr/car-workshop-api/CarWorkshopSystem.Tests/bin/Debug/net8.0/CarWorkshopSystem.WebAPI
 /Users/bahtyarr/car-workshop-api/CarWorkshopSystem.Tests/bin/Debug/net8.0/CarWorkshopSystem.Tests.deps.json
 /Users/bahtyarr/car-workshop-api/CarWorkshopSystem.Tests/bin/Debug/net8.0/CarWorkshopSystem.Tests.runtimeconfig.json
 /Users/bahtyarr/car-workshop-api/CarWorkshopSystem.Tests/bin/Debug/net8.0/CarWorkshopSystem.Tests.dll
@@ -268,6 +268,7 @@
 /Users/bahtyarr/car-workshop-api/CarWorkshopSystem.Tests/obj/Debug/net8.0/CarWorkshopSystem.Tests.AssemblyInfoInputs.cache
 /Users/bahtyarr/car-workshop-api/CarWorkshopSystem.Tests/obj/Debug/net8.0/CarWorkshopSystem.Tests.AssemblyInfo.cs
 /Users/bahtyarr/car-workshop-api/CarWorkshopSystem.Tests/obj/Debug/net8.0/CarWorkshopSystem.Tests.csproj.CoreCompileInputs.cache
+/Users/bahtyarr/car-workshop-api/CarWorkshopSystem.Tests/obj/Debug/net8.0/CarWorkshopSystem.Tests.sourcelink.json
 /Users/bahtyarr/car-workshop-api/CarWorkshopSystem.Tests/obj/Debug/net8.0/CarWorkshopSystem.Tests.csproj.CopyComplete
 /Users/bahtyarr/car-workshop-api/CarWorkshopSystem.Tests/obj/Debug/net8.0/CarWorkshopSystem.Tests.dll
 /Users/bahtyarr/car-workshop-api/CarWorkshopSystem.Tests/obj/Debug/net8.0/refint/CarWorkshopSystem.Tests.dll

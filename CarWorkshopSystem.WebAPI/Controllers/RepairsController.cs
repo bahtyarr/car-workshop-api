@@ -67,7 +67,7 @@ namespace CarWorkshopSystem.WebAPI.Controllers
                 }).ToList()
             };
 
-            return Ok(result);
+            return Ok(repairDetail);
         }
 
         [HttpPost]

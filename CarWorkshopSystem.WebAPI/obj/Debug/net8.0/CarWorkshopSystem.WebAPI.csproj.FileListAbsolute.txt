@@ -230,6 +230,7 @@
 /Users/bahtyarr/car-workshop-api/CarWorkshopSystem.WebAPI/obj/Debug/net8.0/CarWorkshopSystem.WebAPI.csproj.CoreCompileInputs.cache
 /Users/bahtyarr/car-workshop-api/CarWorkshopSystem.WebAPI/obj/Debug/net8.0/CarWorkshopSystem.WebAPI.MvcApplicationPartsAssemblyInfo.cs
 /Users/bahtyarr/car-workshop-api/CarWorkshopSystem.WebAPI/obj/Debug/net8.0/CarWorkshopSystem.WebAPI.MvcApplicationPartsAssemblyInfo.cache
+/Users/bahtyarr/car-workshop-api/CarWorkshopSystem.WebAPI/obj/Debug/net8.0/CarWorkshopSystem.WebAPI.sourcelink.json
 /Users/bahtyarr/car-workshop-api/CarWorkshopSystem.WebAPI/obj/Debug/net8.0/staticwebassets.build.json
 /Users/bahtyarr/car-workshop-api/CarWorkshopSystem.WebAPI/obj/Debug/net8.0/staticwebassets.development.json
 /Users/bahtyarr/car-workshop-api/CarWorkshopSystem.WebAPI/obj/Debug/net8.0/staticwebassets/msbuild.CarWorkshopSystem.WebAPI.Microsoft.AspNetCore.StaticWebAssets.props
